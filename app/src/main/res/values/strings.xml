@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">vyyer</string>
+    <string name="com_auth0_domain">vyyer.us</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="name_surname">%1$s %2$s</string>
+    <string name="scan_info">%1$s, %2$s</string>
+    <string name="unknown_error">Something went wrong</string>
+    <string name="user_photo">User Photo</string>
+
+</resources>
