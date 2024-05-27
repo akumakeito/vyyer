@@ -34,7 +34,6 @@ data class ScanInfoEntity(
 
     fun fromEntityToModel() = IdentityScanInfoModel(
         id = id,
-        scanId = id,
         identityId = identityId,
         createdAt = createdAt,
         verdictName = verdictName,

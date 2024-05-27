@@ -8,8 +8,8 @@ import kotlinx.coroutines.flow.Flow
 interface ScanRepository {
 
     val scanPagingList : Flow<PagingData<IdentityScanInfoModel>>
-
-    val identityList : Flow<List<IdentityInfoEntity>>
+//
+//    val identityList : Flow<List<IdentityInfoEntity>>
 
 
 }

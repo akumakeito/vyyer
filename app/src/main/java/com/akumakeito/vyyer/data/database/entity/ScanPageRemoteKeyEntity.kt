@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class ScanPageRemoteKeyEntity(
     @PrimaryKey
     val id : Int = 1,
+    val lastId : Int,
     val prevPage : Int?,
     val nextPage : Int?
 )
