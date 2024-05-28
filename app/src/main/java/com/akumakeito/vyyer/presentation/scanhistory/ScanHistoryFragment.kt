@@ -65,7 +65,7 @@ class ScanHistoryFragment : Fragment() {
             }
 
             lifecycleScope.launch {
-                adapter.loadStateFlow.collect {
+                adapter.loadStateFlow.collectLatest {
                    swipeRefresh.isRefreshing = it.source.refresh is LoadState.Loading
 
                 }

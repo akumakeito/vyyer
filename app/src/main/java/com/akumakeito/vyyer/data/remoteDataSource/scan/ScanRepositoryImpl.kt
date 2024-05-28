@@ -36,7 +36,8 @@ class ScanRepositoryImpl @Inject constructor(
     @OptIn(ExperimentalPagingApi::class)
     override val scanPagingList: Flow<PagingData<IdentityScanInfoModel>> = Pager(
         config = PagingConfig(DEFAULT_PER_PAGE, enablePlaceholders = false),
-        pagingSourceFactory = { ScanInfoPagingSource(apiService, scanInfoDao) },
+        pagingSourceFactory = scanInfoDao::pagingSource,
+//        pagingSourceFactory = { ScanInfoPagingSource(apiService, scanInfoDao) },
         remoteMediator = scanRemoteMediator
     ).flow
         .map { scanInfoPaging ->
