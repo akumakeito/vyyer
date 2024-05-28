@@ -3,7 +3,7 @@ package com.akumakeito.vyyer.data.dto
 import com.google.gson.annotations.SerializedName
 import kotlinx.serialization.Serializable
 
-const val DEFAULT_PER_PAGE = 20
+const val DEFAULT_PER_PAGE = 10
 
 @Serializable
 data class ScanRequestPaging(
