@@ -42,7 +42,7 @@ class ScanHistoryFragment : Fragment() {
         val concatAdapter = ConcatAdapter(adapter, footerAdapter)
 
         binding.rvScanInfo.adapter = concatAdapter
-
+        adapter.refresh()
         binding.rvScanInfo.apply {
             layoutManager = LinearLayoutManager(requireContext())
             addItemDecoration(VerticalSpaceItemDecoration(20))

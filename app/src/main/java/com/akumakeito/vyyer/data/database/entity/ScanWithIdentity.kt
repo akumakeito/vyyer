@@ -14,7 +14,6 @@ data class ScanWithIdentity(
 ) {
     fun fromEntityToModel() = IdentityScanInfoModel(
         id = scanInfo.id,
-        scanId = scanInfo.scanId,
         identityId = scanInfo.identityId,
         fullName = identityInfo.fullName,
         createdAt = scanInfo.createdAt,

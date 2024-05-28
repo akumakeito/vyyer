@@ -9,7 +9,6 @@ interface ScanRepository {
 
     val scanPagingList : Flow<PagingData<IdentityScanInfoModel>>
 
-    val identityList : Flow<List<IdentityInfoEntity>>
 
 
 }
